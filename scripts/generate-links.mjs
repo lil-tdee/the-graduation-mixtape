@@ -9,7 +9,7 @@ import { resolve } from 'node:path';
 
 const root = process.cwd();
 const outputPath = resolve(root, 'src/guests.json');
-const baseUrl = (process.env.SITE_URL || 'https://YOUR-PROJECT.vercel.app').replace(/\/+$/, '');
+const baseUrl = (process.env.SITE_URL || 'https://the-graduation-mixtape.vercel.app').replace(/\/+$/, '');
 const names = process.argv.slice(2).map((name) => name.trim()).filter(Boolean);
 
 if (!names.length) {
